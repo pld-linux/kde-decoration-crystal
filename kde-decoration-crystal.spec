@@ -13,6 +13,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdebase-desktop-libs >= 9:3.2.0
 BuildRequires:	kdelibs-devel >= 9:3.2.0
+BuildRequires:	kdebase-devel >= 9:3.2.0
 BuildRequires:	unsermake
 Requires:	kdebase-desktop-libs >= 9:3.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
