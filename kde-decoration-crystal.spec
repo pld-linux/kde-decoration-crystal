@@ -14,8 +14,9 @@ BuildRequires:	automake
 BuildRequires:	kdebase-desktop-libs >= 9:3.2.0
 BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	kdebase-devel >= 9:3.2.0
-BuildRequires:	unsermake
 BuildRequires:	python
+BuildRequires:	rpmbuild(macros) >= 1.129
+BuildRequires:	unsermake
 Requires:	kdebase-desktop-libs >= 9:3.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,8 +47,8 @@ pe³n± przezroczysto¶ci± i pe³n± nieprzezroczysto¶ci±).
 %setup -q -n %{_decoration}-%{version}
 
 %build
-cp -f %{_datadir}/automake/config.sub admin
-export UNSERMAKE=%{_datadir}/unsermake/unsermake
+cp -f /usr/share/automake/config.sub admin
+export UNSERMAKE=/usr/share/unsermake/unsermake
 %{__make} -f Makefile.cvs
 
 %configure \
