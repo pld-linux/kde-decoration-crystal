@@ -33,7 +33,7 @@ opaque).
 Ta dekoracja jest modelowana bardzo blisko stylu crystal dla fvwm2,
 skupiaj±c siê g³ównie na przezroczysto¶ci.
 
-Ma g³adki i prosty wystrój, ale ma (pseudo) PRZEZROCZYSTE belkê
+Ma g³adki i prosty wystrój, ale ma (pseudo) PRZEZROCZYST¡ belkê
 tytu³ow±, przyciski i ramki. Styl mo¿e u¿ywaæ bie¿±cych kolorów dla
 belki tytu³owej i mieszaæ je z obrazem t³a pulpitu, lub tylko bawiæ
 siê jasno¶ci± i nasyceniem obrazu t³a. Mo¿na definiowaæ ilo¶æ
