@@ -15,6 +15,7 @@ BuildRequires:	kdebase-desktop-libs >= 9:3.2.0
 BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	kdebase-devel >= 9:3.2.0
 BuildRequires:	unsermake
+BuildRequires:	python
 Requires:	kdebase-desktop-libs >= 9:3.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
