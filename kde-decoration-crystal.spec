@@ -10,21 +10,35 @@ Source0:	http://www.kde-look.org/content/files/13969-%{_decoration}-%{version}.t
 # Source0-md5:	c952b13ae54bd4b460d5245577f0f884
 URL:		http://www.kde-look.org/content/show.php?content=13969
 BuildRequires:	autoconf
-BuildRequires:	unsermake
 BuildRequires:	automake
-BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	kdebase-desktop-libs >= 9:3.2.0
+BuildRequires:	kdelibs-devel >= 9:3.2.0
+BuildRequires:	unsermake
 Requires:	kdebase-desktop-libs >= 9:3.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This decoration is very closely modelled on the fvwm2 crystal style, it's main asset is transparency.
+This decoration is very closely modelled on the fvwm2 crystal style,
+it's main asset is transparency.
  
-It has a sleek and simple design, but it has (pseudo) TRANSPARENT titlebar, buttons and borders. 
-The style can use the current colors for the title bar and blends it with the background image of the desktop, or just play around with the brightness and intensity of the background image. You can define the amount of shadeness for the active and inactive window (all between fully transparent and fully opaque).
+It has a sleek and simple design, but it has (pseudo) TRANSPARENT
+titlebar, buttons and borders. The style can use the current colors
+for the title bar and blends it with the background image of the
+desktop, or just play around with the brightness and intensity of the
+background image. You can define the amount of shadeness for the
+active and inactive window (all between fully transparent and fully
+opaque).
 
-#description -l pl
+%description -l pl
+Ta dekoracja jest modelowana bardzo blisko stylu crystal dla fvwm2,
+skupiaj±c siê g³ównie na przezroczysto¶ci.
 
+Ma g³adki i prosty wystrój, ale ma (pseudo) PRZEZROCZYSTE belkê
+tytu³ow±, przyciski i ramki. Styl mo¿e u¿ywaæ bie¿±cych kolorów dla
+belki tytu³owej i mieszaæ je z obrazem t³a pulpitu, lub tylko bawiæ
+siê jasno¶ci± i nasyceniem obrazu t³a. Mo¿na definiowaæ ilo¶æ
+cieniowania dla aktywnego i nieaktywnego okna (wszystko miêdzy
+pe³n± przezroczysto¶ci± i pe³n± nieprzezroczysto¶ci±).
 
 %prep
 %setup -q -n %{_decoration}-%{version}
