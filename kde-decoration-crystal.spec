@@ -2,22 +2,22 @@
 Summary:	Kwin decoration - %{_decoration}
 Summary(pl):	Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://www.kde-look.org/content/files/13969-%{_decoration}-%{version}.tar.bz2
-# Source0-md5:	a7205899e406285604adcd2727cd1d4c
+# Source0-md5:	4979a4cbf74ca7f300bdfb2aaddc3e77
 URL:		http://www.kde-look.org/content/show.php?content=13969
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	kdebase-desktop-libs >= 9:3.2.0
-BuildRequires:	kdelibs-devel >= 9:3.2.0
-BuildRequires:	kdebase-devel >= 9:3.2.0
+BuildRequires:	kdebase-desktop-libs >= 9:3.5.0
+BuildRequires:	kdelibs-devel >= 9:3.5.0
+BuildRequires:	kdebase-devel >= 9:3.5.0
 BuildRequires:	python
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRequires:	unsermake
-Requires:	kdebase-desktop-libs >= 9:3.2.0
+Requires:	kdebase-desktop-libs >= 9:3.5.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
