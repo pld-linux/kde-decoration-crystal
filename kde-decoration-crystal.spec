@@ -2,22 +2,21 @@
 Summary:	Kwin decoration - %{_decoration}
 Summary(pl):	Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
-Version:	1.0.2
+Version:	0.9.1
 Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://www.kde-look.org/content/files/13969-%{_decoration}-%{version}.tar.bz2
-# Source0-md5:	4979a4cbf74ca7f300bdfb2aaddc3e77
+# Source0-md5:	52cc7700d4263284f857bc81dda89c0e
 URL:		http://www.kde-look.org/content/show.php?content=13969
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	kdebase-desktop-libs >= 9:3.5.0
-BuildRequires:	kdelibs-devel >= 9:3.5.0
-BuildRequires:	kdebase-devel >= 9:3.5.0
-BuildRequires:	python
-BuildRequires:	rpmbuild(macros) >= 1.129
+BuildRequires:	kdebase-desktop-libs >= 9:3.2.0
+BuildRequires:	kdelibs-devel >= 9:3.2.0
+BuildRequires:	kdebase-devel >= 9:3.2.0
 BuildRequires:	unsermake
-Requires:	kdebase-desktop-libs >= 9:3.5.0
+BuildRequires:	python
+Requires:	kdebase-desktop-libs >= 9:3.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -47,8 +46,8 @@ pe³n± przezroczysto¶ci± i pe³n± nieprzezroczysto¶ci±).
 %setup -q -n %{_decoration}-%{version}
 
 %build
-cp -f /usr/share/automake/config.sub admin
-export UNSERMAKE=/usr/share/unsermake/unsermake
+cp -f %{_datadir}/automake/config.sub admin
+export UNSERMAKE=%{_datadir}/unsermake/unsermake
 %{__make} -f Makefile.cvs
 
 %configure \
