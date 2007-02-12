@@ -1,6 +1,6 @@
 %define		_decoration	crystal
 Summary:	Kwin decoration - %{_decoration}
-Summary(pl):	Dekoracja kwin - %{_decoration}
+Summary(pl.UTF-8):   Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
 Version:	1.0.2
 Release:	1
@@ -32,16 +32,16 @@ background image. You can define the amount of shadeness for the
 active and inactive window (all between fully transparent and fully
 opaque).
 
-%description -l pl
+%description -l pl.UTF-8
 Ta dekoracja jest modelowana bardzo blisko stylu crystal dla fvwm2,
-skupiaj±c siê g³ównie na przezroczysto¶ci.
+skupiajÄ…c siÄ™ gÅ‚Ã³wnie na przezroczystoÅ›ci.
 
-Ma g³adki i prosty wystrój, ale ma (pseudo) PRZEZROCZYST¡ belkê
-tytu³ow±, przyciski i ramki. Styl mo¿e u¿ywaæ bie¿±cych kolorów dla
-belki tytu³owej i mieszaæ je z obrazem t³a pulpitu, lub tylko bawiæ
-siê jasno¶ci± i nasyceniem obrazu t³a. Mo¿na definiowaæ ilo¶æ
-cieniowania dla aktywnego i nieaktywnego okna (wszystko miêdzy
-pe³n± przezroczysto¶ci± i pe³n± nieprzezroczysto¶ci±).
+Ma gÅ‚adki i prosty wystrÃ³j, ale ma (pseudo) PRZEZROCZYSTÄ„ belkÄ™
+tytuÅ‚owÄ…, przyciski i ramki. Styl moÅ¼e uÅ¼ywaÄ‡ bieÅ¼Ä…cych kolorÃ³w dla
+belki tytuÅ‚owej i mieszaÄ‡ je z obrazem tÅ‚a pulpitu, lub tylko bawiÄ‡
+siÄ™ jasnoÅ›ciÄ… i nasyceniem obrazu tÅ‚a. MoÅ¼na definiowaÄ‡ iloÅ›Ä‡
+cieniowania dla aktywnego i nieaktywnego okna (wszystko miÄ™dzy
+peÅ‚nÄ… przezroczystoÅ›ciÄ… i peÅ‚nÄ… nieprzezroczystoÅ›ciÄ…).
 
 %prep
 %setup -q -n %{_decoration}-%{version}
