@@ -1,6 +1,6 @@
 %define		_decoration	crystal
 Summary:	Kwin decoration - %{_decoration}
-Summary(pl.UTF-8):   Dekoracja kwin - %{_decoration}
+Summary(pl.UTF-8):	Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
 Version:	1.0.2
 Release:	1
