@@ -2,15 +2,13 @@
 Summary:	Kwin decoration - %{_decoration}
 Summary(pl.UTF-8):	Dekoracja kwin - %{_decoration}
 Name:		kde-decoration-%{_decoration}
-Version:	1.0.2
-Release:	2
+Version:	1.0.3
+Release:	1
 License:	GPL
 Group:		Themes
-Source0:	http://www.kde-look.org/content/files/13969-%{_decoration}-%{version}.tar.bz2
-# Source0-md5:	4979a4cbf74ca7f300bdfb2aaddc3e77
-Patch0:		kde-ac260.patch
-Patch1:		kde-ac260-lt.patch
-Patch2:		kde-am.patch
+Source0:	http://www.kde-look.org/CONTENT/content-files/13969-%{_decoration}-%{version}.tar.bz2
+# Source0-md5:	daeb944807b0bb1c60a549ce7ee3ed8d
+Patch0:		kde-ac260-lt.patch
 URL:		http://www.kde-look.org/content/show.php?content=13969
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -49,8 +47,6 @@ pełną przezroczystością i pełną nieprzezroczystością).
 %prep
 %setup -q -n %{_decoration}-%{version}
 %patch0 -p1
-%patch1 -p1
-%patch2 -p1
 
 %build
 cp -f /usr/share/automake/config.sub admin
