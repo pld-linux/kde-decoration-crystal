@@ -13,8 +13,9 @@ URL:		http://www.kde-look.org/content/show.php?content=13969
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdebase-desktop-libs >= 9:3.5.0
-BuildRequires:	kdelibs-devel >= 9:3.5.0
 BuildRequires:	kdebase-devel >= 9:3.5.0
+BuildRequires:	kdelibs-devel >= 9:3.5.0
+Buildrequires:	libuuid-devel
 BuildRequires:	python
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRequires:	unsermake
@@ -24,7 +25,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This decoration is very closely modelled on the fvwm2 crystal style,
 it's main asset is transparency.
- 
+
 It has a sleek and simple design, but it has (pseudo) TRANSPARENT
 titlebar, buttons and borders. The style can use the current colors
 for the title bar and blends it with the background image of the
@@ -38,11 +39,12 @@ Ta dekoracja jest modelowana bardzo blisko stylu crystal dla fvwm2,
 skupiając się głównie na przezroczystości.
 
 Ma gładki i prosty wystrój, ale ma (pseudo) PRZEZROCZYSTĄ belkę
-tytułową, przyciski i ramki. Styl może używać bieżących kolorów dla
-belki tytułowej i mieszać je z obrazem tła pulpitu, lub tylko bawić
-się jasnością i nasyceniem obrazu tła. Można definiować ilość
-cieniowania dla aktywnego i nieaktywnego okna (wszystko między
-pełną przezroczystością i pełną nieprzezroczystością).
+tytułową, przyciski i ramki. Styl może używać bieżących
+kolorów dla belki tytułowej i mieszać je z obrazem tła pulpitu,
+lub tylko bawić się jasnością i nasyceniem obrazu tła. Można
+definiować ilość cieniowania dla aktywnego i nieaktywnego okna
+(wszystko między pełną przezroczystością i pełną
+nieprzezroczystością).
 
 %prep
 %setup -q -n %{_decoration}-%{version}
