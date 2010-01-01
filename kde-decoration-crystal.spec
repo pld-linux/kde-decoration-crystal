@@ -15,7 +15,7 @@ BuildRequires:	automake
 BuildRequires:	kdebase-desktop-libs >= 9:3.5.0
 BuildRequires:	kdebase-devel >= 9:3.5.0
 BuildRequires:	kdelibs-devel >= 9:3.5.0
-Buildrequires:	libuuid-devel
+BuildRequires:	libuuid-devel
 BuildRequires:	python
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRequires:	unsermake
